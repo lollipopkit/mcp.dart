@@ -128,7 +128,7 @@ class SSEClient implements McpClient {
               _messageEndpoint =
                   data.startsWith('http') ? data : baseUrl + data;
               Logger.root.info('Received message endpoint: $_messageEndpoint');
-              _processStateController.add(ProcessRunning(0));
+              _processStateController.add(const ProcessRunning());
             } else {
               // Subsequent messages are JSON-RPC messages
               try {
@@ -149,7 +149,7 @@ class SSEClient implements McpClient {
           _scheduleReconnect();
         },
         onDone: () {
-          _processStateController.add(ProcessExited());
+          _processStateController.add(const ProcessExited());
           _scheduleReconnect();
         },
       );

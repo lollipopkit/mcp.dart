@@ -1,6 +1,6 @@
 # MCP.dart
 
-A Dart client implementation for the Machine Code Protocol (MCP), enabling communication with MCP-compatible servers and tools.
+A Dart client implementation for the Machine Code Protocol (MCP).
 
 ## Features
 
@@ -22,11 +22,6 @@ A Dart client implementation for the Machine Code Protocol (MCP), enabling commu
   - Works on macOS, Linux, and Windows
   - Handles platform-specific environment setup
 
-## Getting Started
-
-```
-dart pub add mcp
-```
 
 ## Usage
 
